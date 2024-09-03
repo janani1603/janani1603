@@ -1,0 +1,16 @@
+num1=input("enter the first number: ")
+num2=input("Enter the second number: ")
+def func():
+    if int(num1)>=0 and int(num2)>=0:
+        print(f'addition:{int(num1) + int(num2)}')
+        print(f'subtraction:{int(num1) - int(num2)}')
+        print(f'multiplication:{int(num1) * int(num2)}')
+        print(f'division:{int(num1) / int(num2)}')
+    else:
+        print("Enter only positive integer")
+try:
+    func()
+except ZeroDivisionError:
+    print("0 is not divisible")
+except ValueError:
+    print("Enter only integer value")
