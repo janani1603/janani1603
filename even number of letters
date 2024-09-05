@@ -1,0 +1,8 @@
+user=input("Enter the word: ")
+if user.isalpha():
+    if len(user)%2==0:
+        print([user])
+    else:
+        print("list is empty")
+else:
+    print("Wrong input")
