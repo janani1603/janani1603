@@ -1,0 +1,17 @@
+from colorama import Fore
+lst=[]
+i = 0
+while i >= 0:
+    user=input(f'{Fore.WHITE}Enter the word {(i+1)} (exit will terminate the prog.): ')
+    if user == 'exit':
+        if len(lst)==0:
+            print(Fore.RED+"List is empty")
+        else:
+            print(lst)
+        break
+    if user.isalpha():
+        if len(user) % 2 == 0:
+            lst.append(user)
+    else:
+        print(Fore.RED+'Wrong input')
+    i += 1
