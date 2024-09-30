@@ -1,8 +1,10 @@
+def prRed(skk):
+    print("\033[91m {}\033[00m" .format(skk))
 user=input("Enter the word: ")
 if user.isalpha():
     if len(user)%2==0:
         print([user])
     else:
-        print("list is empty")
+        prRed("LIST IS EMPTY")
 else:
-    print("Wrong input")
+    prRed("WRONG INPUT")
